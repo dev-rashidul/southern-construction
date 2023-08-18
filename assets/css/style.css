@@ -1,0 +1,1910 @@
+/* Base Styles CSS Start */
+
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Roboto:wght@300;400;500;700&family=Ubuntu:wght@300;400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-family: "Oxygen", sans-serif;
+}
+
+/* Colors */
+:root {
+  --primary: #fc5e16;
+  --secondary: #001c47;
+  --gray: #5f6168;
+  --light: #ccddf6;
+  --white: #ffffff;
+  --dark: #000000;
+}
+
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+}
+
+.primary-btn a {
+  position: relative;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 170%;
+  text-transform: capitalize;
+  color: var(--white);
+  background: #fc5e16;
+  padding: 16px 42px;
+  transition: all 0.3s ease-in-out;
+}
+
+.primary-btn a:hover {
+  color: #022f63;
+  background: var(--white);
+}
+
+.main-title h2 {
+  font-family: Roboto, sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 120%;
+  color: var(--secondary);
+}
+
+.main-title h2 img {
+  position: relative;
+  margin-bottom: -12px;
+}
+
+/* Base Styles CSS End */
+
+/* Header Part CSS Start */
+
+/* Navigation Section CSS Start */
+
+.navigation {
+  background: var(--white);
+}
+
+.navigation.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  -webkit-animation: sticky 1.2s;
+  animation: sticky 1.2s;
+}
+
+@keyframes sticky {
+  from {
+    top: -100px;
+  }
+  to {
+    top: 0;
+  }
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 120px;
+  padding: 0 30px 10px;
+  background: var(--primary);
+}
+
+.top-nav-wrapper,
+.main-menu-wrapper {
+  padding: 0 3%;
+}
+
+.top-nav-wrapper {
+  padding: 10px 3%;
+}
+
+.nav-contact-info ul li {
+  padding-right: 50px;
+}
+
+.nav-contact-info ul li a {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: var(--gray);
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-contact-info ul li a i {
+  color: var(--secondary);
+  padding-right: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-contact-info ul li a span:hover {
+  text-decoration: underline;
+}
+
+.nav-contact-info ul li a:hover,
+.nav-contact-info ul li a:hover i {
+  color: #f7570e;
+}
+
+.nav-contact-info ul li a:focus span,
+.nav-contact-info ul li a:active span {
+  color: #f7570e;
+  text-decoration: underline;
+}
+
+.nav-contact-info ul li a:focus > i,
+.nav-contact-info ul li a:active > i {
+  color: #f7570e;
+  text-decoration: none !important;
+}
+
+.top-nav-social ul li {
+  padding-left: 40px;
+}
+
+.top-nav-social ul li a {
+  font-size: 20px;
+  color: var(--secondary);
+  transition: all 0.3s ease-in-out;
+}
+
+.top-nav-social ul li a:hover {
+  color: #f7570e;
+}
+
+.nav-menu-wrapper hr {
+  border-top: 1px solid #ededed;
+  opacity: 1;
+  margin: 0;
+}
+
+.main-menu ul li {
+  padding: 20px 0;
+  padding-right: 60px;
+  position: relative;
+}
+
+.main-menu ul li a {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--secondary);
+  transition: all 0.3s ease-in-out;
+}
+
+.main-menu ul li a:hover {
+  color: #f7570e;
+  text-decoration: underline;
+}
+
+.main-menu ul li a.active {
+  color: var(--primary);
+}
+
+.main-menu ul li a:focus,
+.main-menu ul li a:active {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+.dropdown {
+  position: absolute;
+  top: 65px;
+  left: 0;
+  width: 300px;
+  background: #f9f9f9;
+  display: none;
+  z-index: 999;
+}
+
+.main-menu ul li:focus-within,
+.main-menu ul li:hover > .dropdown {
+  display: initial;
+}
+
+.dropdown li {
+  padding: 0 !important;
+  border-bottom: 1px solid var(--white);
+}
+
+.dropdown li a {
+  display: block;
+  font-family: "Roboto", sans-serif !important;
+  font-size: 18px !important;
+  font-weight: 400 !important;
+  color: var(--secondary) !important;
+  padding: 16px 0;
+  padding-left: 30px;
+  transition: all 0.3s ease-in-out;
+}
+
+.dropdown li a:hover {
+  background: var(--primary);
+  color: var(--white) !important;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  padding: 5px 20px;
+  margin-top: 7px;
+  background: var(--primary);
+  border-left: 1px solid #ededed;
+  border-radius: 50px;
+}
+
+.search-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10px;
+  height: 50px;
+  color: var(--white);
+}
+
+.search-text {
+  width: 0;
+  color: var(--white);
+  background: none;
+  border: none;
+  transition: all 0.4s ease-in-out;
+}
+
+.search-box ::placeholder {
+  font-size: 16px;
+  color: var(--white);
+}
+
+.search-text:focus {
+  outline: 0;
+}
+
+.search-box:hover > .search-text {
+  width: 200px;
+}
+
+/* Mobile Navigation Section CSS Start */
+
+#Mobile-menu {
+  background: var(--white);
+}
+
+#Mobile-menu.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  -webkit-animation: sticky 1.2s;
+  animation: sticky 1.2s;
+}
+
+@keyframes sticky {
+  from {
+    top: -100px;
+  }
+  to {
+    top: 0;
+  }
+}
+
+.bars {
+  padding-left: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.bars:hover {
+  color: var(--primary);
+}
+
+.bar-icon {
+  font-size: 20px;
+  padding-right: 13px;
+}
+
+.bars span {
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: -4px;
+}
+
+.mobile-menu-items ul li a {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  font-size: 20px;
+  color: var(--dark);
+  padding: 40px 0 !important;
+  border-left: 1px solid #ededed;
+  transition: all 0.3s ease-in-out;
+  z-index: 99;
+}
+
+.mobile-menu-items ul li a:hover {
+  color: var(--primary);
+}
+
+.mobile-menu-items .mobile-logo {
+  background: var(--primary);
+}
+
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100vh;
+  padding: 30px;
+  padding-right: 10px;
+  background: var(--white);
+  overflow-x: hidden;
+  overflow-y: scroll;
+  transition: left 0.3s ease-in-out;
+  z-index: 999;
+}
+
+.mobile-nav.active {
+  left: 0;
+}
+
+.mobile-nav ul {
+  flex-direction: column;
+  align-items: flex-start !important;
+}
+
+.mobile-nav ul li {
+  width: 110%;
+  padding-right: 0;
+}
+
+#cross-icon {
+  display: flex;
+  justify-content: end;
+  padding-right: 10px;
+}
+
+#cross-icon i {
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+#cross-icon i:hover,
+#cross-icon i:focus,
+#cross-icon i:active {
+  color: var(--primary);
+}
+
+.mobile-dropdown {
+  position: relative !important;
+  top: 15px;
+  left: -30px;
+}
+
+.mobile-dropdown li {
+  width: 121%;
+  background: #f9f9f9;
+}
+
+.mobile-dropdown li a {
+  display: block;
+  width: 121%;
+  font-size: 16px !important;
+}
+
+.mobile-menu-bottom {
+  padding-top: 20px;
+}
+
+.mobile-menu-bottom ul li a {
+  font-size: 20px;
+  color: #a1aeb7;
+}
+
+.mobile-menu-bottom ul li {
+  padding-right: 30px;
+}
+
+.mobile-menu-bottom ul {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 15px;
+}
+
+.mobile-menu-bottom p {
+  font-size: 14px;
+  color: #a1aeb7;
+  margin-bottom: 0;
+}
+
+/* Mobile Navigation Section CSS End */
+
+/* Navigation Section CSS End */
+
+/* Home Hero Section CSS Start */
+
+.home-hero-content,
+.home-hero-img {
+  width: 50%;
+}
+
+.home-hero-content {
+  background: linear-gradient(90deg, #042e56 0%, #012e65 100%);
+  padding: 130px 50px 50px 100px;
+}
+
+.home-hero-content h1 {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 110%;
+  color: var(--white);
+}
+
+.home-hero-content h4 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 150%;
+  color: var(--light);
+  padding: 20px 0;
+}
+
+.hero-btn {
+  padding-top: 25px;
+}
+
+.hero-stats-wrapper {
+  padding-top: 80px;
+}
+
+.hero-stats {
+  padding-right: 50px;
+  text-align: center;
+}
+
+.hero-stats i {
+  color: #fbbc02;
+  padding: 0 1px;
+}
+
+.hero-stats img {
+  width: initial !important;
+  margin: auto;
+}
+
+.hero-stats p {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  color: var(--white);
+  padding-top: 10px;
+  margin-bottom: 0;
+}
+
+.home-hero-img img {
+  min-height: 720px;
+  height: 100%;
+}
+
+.owl-nav.disabled {
+  display: block !important;
+}
+
+.owl-dots {
+  display: none;
+}
+
+.hero-slider .owl-prev,
+.hero-slider .owl-next {
+  position: absolute;
+  bottom: 60px;
+}
+
+.hero-slider .owl-prev {
+  right: 170px;
+}
+
+.hero-slider .owl-next {
+  right: 70px;
+}
+
+.hero-slider .owl-prev i,
+.hero-slider .owl-next i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  font-size: 25px;
+  color: var(--dark);
+  background: var(--white);
+}
+
+.hero-slider .owl-next i {
+  color: var(--white);
+  background: var(--primary);
+}
+
+.owl-theme .owl-nav [class*="owl-"]:hover {
+  background: none;
+}
+
+/* Home Hero Section CSS End */
+
+/* Header Part CSS End */
+
+/* Main Part CSS Start */
+
+/* Features Section CSS Start */
+
+.features-wrapper {
+  padding-top: 80px;
+}
+
+.features-content h2 {
+  margin-bottom: 40px;
+}
+
+.features-content p {
+  font-size: 16px;
+  line-height: 170%;
+  color: var(--gray);
+}
+
+.features-content ul li {
+  font-size: 16px;
+  line-height: 170%;
+  color: var(--gray);
+  padding: 5px 0;
+}
+
+.features-content ul li i {
+  color: var(--primary);
+  padding-right: 12px;
+}
+
+/* Features Section CSS End */
+
+/* Services Section CSS Start */
+
+.services-wrapper {
+  padding-top: 100px;
+}
+
+.services-top {
+  padding-bottom: 100px;
+}
+
+.services-top-content h2 {
+  margin-bottom: 30px;
+}
+
+.services-top-content p {
+  font-size: 16px;
+  line-height: 170%;
+  color: #87888e;
+  margin-bottom: 0;
+}
+
+.service-card {
+  position: relative;
+  height: 100%;
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  transition: all 0.3s ease-in-out;
+}
+
+.service-card:hover {
+  box-shadow: 0px 4px 3px 0px #979797;
+}
+
+.service-card-img img {
+  width: 100%;
+  max-height: 300px;
+}
+
+.services-cat-name {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.services-cat-name span {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--white);
+  background: var(--primary);
+  padding: 10px 26px;
+}
+
+.service-card-content {
+  padding: 35px 30px 50px;
+}
+
+.service-card-content h5 {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 130%;
+  color: var(--secondary);
+  margin-bottom: 15px;
+}
+
+.service-card-content p {
+  font-size: 16px;
+  line-height: 170%;
+  color: var(--gray);
+  margin-bottom: 20px;
+}
+
+.service-card-btn {
+  position: absolute;
+  bottom: 30px;
+}
+
+.service-card-btn a {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: var(--secondary);
+  transition: all 0.3s ease-in-out;
+}
+
+.service-card-btn a:hover {
+  color: var(--primary);
+}
+
+.service-card-btn a span {
+  padding-left: 10px;
+}
+
+/* Services Section CSS End */
+
+/* Question Section CSS Start */
+
+.question-wrapper {
+  padding-top: 120px;
+}
+
+.question-container {
+  background: #fff;
+  box-shadow: 0px 8px 40px 0px rgba(14, 10, 24, 0.1);
+}
+
+.question-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.call-icon {
+  position: absolute;
+  top: 0;
+  left: -75px;
+}
+
+.question-content {
+  padding-left: 100px;
+}
+
+.question-content h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 130%;
+  color: var(--secondary);
+}
+
+.question-content h3 a {
+  color: var(--primary);
+}
+
+.question-content p {
+  font-size: 16px;
+  line-height: 170%;
+  color: var(--gray);
+  margin: 0;
+}
+
+/* Question Section CSS End */
+
+/* Testimonial Section CSS Start */
+
+.testimonial-wrapper {
+  padding-top: 150px;
+}
+
+.testimonial-title h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 120%;
+  color: var(--secondary);
+}
+
+.testimonial-slider {
+  padding-top: 60px;
+}
+
+.testimonial-slide {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.testimonial-slide-content,
+.testimonial-slide-img {
+  width: 50%;
+}
+
+.testimonial-slide-content {
+  position: relative;
+  min-height: 503px;
+  max-height: 600px;
+  height: 100%;
+  padding: 80px;
+  background: linear-gradient(90deg, #042e56 0%, #012e65 100%);
+  box-shadow: 0px 8px 40px 0px rgba(14, 10, 24, 0.1);
+}
+
+.quote-icon {
+  position: absolute;
+  top: 60px;
+  left: 60px;
+}
+
+.testimonial-slide-content h4 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 150%;
+  color: var(--white);
+}
+
+.testimonial-client-name {
+  position: absolute;
+  bottom: 60px;
+}
+
+.testimonial-client-name h5 {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+  color: var(--white);
+  margin: 0;
+}
+
+.testimonial-client-name span {
+  font-size: 14px;
+  line-height: 170%;
+  color: #ccddf6;
+}
+
+.testimonial-slide-img img {
+  width: 100%;
+  min-height: 503px;
+  max-height: 600px;
+  object-fit: cover;
+}
+
+.testimonail-slide-cat {
+  position: absolute;
+  top: 22px;
+  left: 26px;
+}
+
+.testimonail-slide-cat span {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 130%;
+  color: var(--white);
+  background: var(--primary);
+  padding: 10px 26px;
+}
+
+.testimonial-slider .owl-prev,
+.testimonial-slider .owl-next {
+  position: absolute;
+  bottom: 30px;
+}
+
+.testimonial-slider .owl-prev {
+  right: 93px;
+}
+
+.testimonial-slider .owl-next {
+  right: 33px;
+}
+
+.testimonial-slider .owl-prev i,
+.testimonial-slider .owl-next i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  font-size: 25px;
+  color: var(--dark);
+  background: var(--white);
+}
+
+.testimonial-slider .owl-next i {
+  color: var(--white);
+  background: var(--primary);
+}
+
+/* Testimonial Section CSS End */
+
+/* Why Section CSS Start */
+
+.why-wrapper {
+  background: linear-gradient(90deg, #042e56 0%, #012e65 100%);
+  margin-top: 120px;
+  padding: 200px 0;
+}
+
+.why-content h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 120%;
+  margin-bottom: 15px;
+  color: var(--white);
+}
+
+.why-content h2 img {
+  position: relative;
+  margin-top: 15px;
+}
+
+.why-content p {
+  font-size: 16px;
+  line-height: 170%;
+  color: var(--white);
+}
+
+.why-btn {
+  padding-top: 60px;
+}
+
+.why-card {
+  height: 100%;
+  padding: 40px 30px;
+  border: 1px solid #ebebeb;
+  background: #fff;
+}
+
+.why-card-content h5 {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 130%;
+  color: var(--secondary);
+  padding-top: 15px;
+}
+
+.why-card-content p {
+  font-size: 16px;
+  line-height: 170%;
+  color: var(--gray);
+  margin: 0;
+}
+
+/* Why Section CSS End */
+
+/* FAQ Section CSS Start */
+
+.faq-wrapper {
+  padding-top: 100px;
+  margin-bottom: -100px;
+}
+
+.faq-img img {
+  max-height: 600px;
+}
+
+.accordion {
+  padding-top: 30px;
+  border-radius: none;
+}
+
+.accordion-item {
+  margin-bottom: 10px;
+  border: 1px solid #ebebeb !important;
+}
+
+.accordion-button.collapsed {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 140%;
+  color: var(--secondary);
+  padding: 20px 20px;
+}
+
+.accordion-button:not(.collapsed) {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 140%;
+  color: var(--white);
+  background: var(--primary);
+  padding: 20px 20px;
+}
+
+.accordion-button::after {
+  background-image: url(../images/chevron-down-icon.svg);
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url(../images/chevron-up-icon.svg);
+  transform: initial;
+}
+
+.accordion-button {
+  border-top-left-radius: none !important;
+  border-top-right-radius: none !important;
+}
+
+.accordion-button:focus {
+  border: none;
+  box-shadow: none;
+}
+
+.accordion-body p {
+  font-size: 16px;
+  line-height: 170%;
+  color: var(--gray);
+  margin: 0;
+}
+
+/* FAQ Section CSS End */
+
+/* Main Part CSS End */
+
+/* Footer Part CSS Start */
+
+/* Free Quote Section CSS Start */
+
+.free-quote-wrapper {
+  position: relative;
+  padding-top: 250px;
+  margin-bottom: -150px;
+}
+
+.free-quote-container {
+  padding: 30px 80px;
+  background: var(--main-color-1, #fc5e16);
+  box-shadow: 0px 8px 40px 0px rgba(14, 10, 24, 0.1);
+}
+
+.free-quote-content h3 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 38px;
+  color: var(--white);
+  margin-bottom: 20px;
+}
+
+.free-quote-content p {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--white);
+  margin: 0;
+}
+
+.free-quote-content p a {
+  color: var(--white);
+  text-decoration: underline;
+}
+
+.free-quote-input-field {
+  width: 100%;
+}
+
+.free-quote-input-field input,
+.free-quote-input-field textarea {
+  width: 100%;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  background: var(--white);
+  border: 1px solid #c2d1d9;
+  border-radius: 5px;
+}
+
+.free-quote-input-field input:focus,
+.free-quote-input-field textarea:focus {
+  outline: none;
+}
+
+.free-quote-submit-btn input {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  padding: 12px 45px;
+  color: var(--white);
+  background: #022e65;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.free-quote-submit-btn input:hover {
+  color: #022f63;
+  background: var(--white);
+}
+
+.free-quote-form ::placeholder {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 14px;
+  color: var(--dark);
+}
+
+.hide-on-focus:focus::-webkit-input-placeholder {
+  color: white;
+}
+.hide-on-focus:focus::-moz-placeholder {
+  color: white;
+}
+.hide-on-focus:focus:-ms-input-placeholder {
+  color: white;
+}
+
+/* Free Quote Section CSS End */
+
+/* Footer Section CSS Start */
+
+.footer-wrapper {
+  padding: 220px 0 150px;
+  background: linear-gradient(90deg, #042e56 0%, #012e65 100%);
+}
+
+.footer-info p {
+  font-size: 16px;
+  line-height: 170%;
+  color: #ccddf6;
+  padding: 25px 0;
+  margin: 0;
+}
+
+.footer-social ul li {
+  padding-right: 30px;
+}
+
+.footer-social ul li a i {
+  font-size: 20px;
+  color: var(--white);
+  transition: all 0.3s ease-in-out;
+}
+
+.footer-social ul li a i:hover {
+  color: var(--primary);
+}
+
+.footer-social p {
+  font-size: 14px;
+}
+
+.footer-menu h5,
+.footer-subscribe h5 {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 130%;
+  color: var(--white);
+  padding-bottom: 15px;
+}
+
+.footer-nav ul li {
+  padding: 5px 0;
+}
+
+.footer-nav ul li a {
+  position: relative;
+  font-size: 16px;
+  line-height: 28px;
+  text-transform: capitalize;
+  color: #ccddf6;
+  padding-left: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.footer-nav ul li a:hover {
+  color: var(--white);
+  text-decoration: underline;
+}
+
+.footer-nav ul li a:focus,
+.footer-nav ul li a:active {
+  color: var(--white);
+  text-decoration: underline;
+}
+
+.footer-nav ul li a::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 4px;
+  background: var(--primary);
+}
+
+.footer-subscribe p {
+  font-size: 16px;
+  line-height: 170%;
+  color: #ccddf6;
+}
+
+.subscribe-form form {
+  display: flex;
+  justify-content: space-between;
+  max-width: 280px;
+  width: 280px;
+  border: 1px solid #fff;
+  background: #fff;
+}
+
+.subscribe-form input {
+  width: 84%;
+  border: none;
+  background: transparent;
+  padding: 13px 20px;
+}
+
+.subscribe-form input:focus {
+  outline: 0;
+}
+
+.subscribe-form ::placeholder {
+  font-size: 14px;
+  color: #022f64;
+}
+
+.subscribe-form button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background: var(--primary);
+  margin: 2px;
+  border: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.subscribe-form button:hover {
+  background: #022f65;
+}
+
+.subscribe-form button img {
+  margin-left: 5px;
+}
+
+/* Footer Section CSS End */
+
+/* Footer Part CSS End */
+
+/* ==============***==============
+Contact Us Page CSS
+==============***============== */
+
+/* Contact Hero Section CSS Start */
+
+.contact-hero-wrapper {
+  background: linear-gradient(#001c478a, #001c478a),
+    url(../images/contact-hero-bg.png);
+}
+
+.common-hero-wrapper {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 130px 0;
+}
+
+.common-hero-title h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 60px;
+  font-weight: 500;
+  line-height: 110%;
+  color: var(--white);
+}
+
+.common-hero-title img {
+  position: relative;
+  margin-top: 25px;
+}
+
+/* Contact Hero Section CSS End */
+
+/* Breadcrumb Section CSS Start */
+
+.breadcrumb-wrapper {
+  padding: 25px 0;
+}
+
+.breadcrumb-container ul li {
+  color: #646974;
+  padding: 0 5px;
+}
+
+.breadcrumb-container ul li a {
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration-line: underline;
+  color: #646974;
+  transition: all 0.3s ease-in-out;
+}
+
+.breadcrumb-container ul li a.active {
+  text-decoration-line: none;
+  color: var(--primary);
+}
+
+.breadcrumb-container ul li a:hover,
+.breadcrumb-container ul li a:focus,
+.breadcrumb-container ul li a:active {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+/* Breadcrumb Section CSS End */
+
+/* Get In Touch Section CSS Start */
+
+.get-in-touch-wrapper {
+  padding: 60px 0;
+}
+
+.get-in-touch-content {
+  max-width: 420px;
+  width: 100%;
+}
+
+.get-in-touch-content p {
+  font-size: 16px;
+  line-height: 170%;
+  color: var(--gray);
+  padding: 15px 0;
+}
+
+.owner-name h5 {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--secondary);
+  margin-bottom: 5px;
+}
+
+.owner-name p {
+  color: var(--gray);
+  font-size: 16px;
+  line-height: 170%;
+  margin: 0;
+  padding: 0;
+}
+
+.owner-contact {
+  padding-top: 15px;
+}
+
+.owner-contact ul li a {
+  position: relative;
+  display: block;
+  font-size: 14px;
+  color: var(--secondary);
+  padding: 0 0 5px 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+.owner-contact ul li a:hover,
+.owner-contact ul li a:focus,
+.owner-contact ul li a:active {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+.owner-contact ul li a::after {
+  position: absolute;
+  content: "";
+  top: 10px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  background: var(--primary);
+}
+
+.get-in-touch-form-container {
+  max-width: 460px;
+  width: 100%;
+  background: var(--secondary);
+  padding: 80px 60px;
+  float: right;
+}
+
+.get-in-touch-form-container h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  color: var(--white);
+  margin-bottom: 20px;
+}
+
+.get-in-touch-field {
+  width: 100%;
+}
+
+.get-in-touch-field input,
+.get-in-touch-field textarea {
+  width: 100%;
+  padding: 14px 20px;
+  margin-bottom: 20px;
+  border: 1px solid #fff;
+  background: #fff;
+}
+
+.get-in-touch-field input:focus,
+.get-in-touch-field textarea:focus {
+  outline: 0;
+}
+
+.get-in-touch-submit input {
+  position: relative;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 170%;
+  text-transform: capitalize;
+  color: var(--white);
+  background: #fc5e16;
+  padding: 16px 42px;
+  border: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.get-in-touch-submit input:hover {
+  color: #022f63;
+  background: var(--white);
+}
+
+.get-in-touch-form ::placeholder {
+  font-size: 14px;
+  color: var(--secondary);
+}
+
+.get-in-touch-form ::-moz-placeholder {
+  font-size: 14px;
+  color: var(--secondary);
+}
+
+/* Get In Touch Section CSS End */
+
+/* Contact Map Section CSS Start */
+
+.map-wrapper {
+  position: relative;
+  margin-bottom: -380px;
+}
+
+.map-container iframe {
+  width: 100%;
+  min-height: 700px;
+  height: 100%;
+}
+
+/* Contact Map Section CSS End */
+
+/* ==============***==============
+About Us Page CSS
+==============***============== */
+
+/* About Hero Section CSS Start */
+
+.about-hero-wrapper {
+  background: linear-gradient(#001c47a1, #001c47a1),
+    url(../images/about-hero-bg.png);
+}
+
+/* About Hero Section CSS End */
+
+/* Building Dreams Section CSS Start */
+
+.building-dreams-wrapper {
+  padding-top: 80px;
+}
+
+.building-dreams-content {
+  padding-right: 80px;
+}
+
+.building-dreams-content h5 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 150%;
+  color: var(--secondary);
+  padding: 15px 0;
+  margin: 0;
+}
+
+.building-dreams-content p {
+  font-size: 16px;
+  line-height: 170%;
+  color: var(--gray);
+}
+
+.reece-polley-info .owner-name h5 {
+  padding: 0;
+  margin-bottom: 5px;
+}
+
+.reece-polley-sign {
+  padding-left: 30px;
+}
+
+.building-dreams-img img {
+  max-width: 80%;
+  width: 100%;
+  max-height: 480px;
+}
+
+.building-dreams-message {
+  position: relative;
+  background: var(--primary);
+  padding: 35px 30px;
+  margin-top: -70px;
+  margin-left: 70px;
+}
+
+.building-dreams-message-icon {
+  max-width: 60px;
+  width: 100%;
+}
+
+.building-dreams-message-text h5 {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 130%;
+  color: var(--white);
+  padding: 0 25px;
+}
+
+/* Building Dreams Section CSS End */
+
+/* Vision Section CSS Start */
+
+.vision-wrapper {
+  background: linear-gradient(90deg, #042e56 0%, #012e65 100%);
+  margin-top: 100px;
+}
+
+.vision-story-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vision-story-text,
+.vision-img,
+.vision-img img {
+  width: 100%;
+  min-height: 380px;
+  max-height: 380px;
+  height: 100%;
+}
+
+.vision-story-text h1 {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+.vision-story-text h1 b {
+  font-size: 100px;
+  padding-right: 10px;
+}
+
+.vision-story-text h1 span {
+  color: var(--primary);
+}
+
+.vision-content {
+  max-width: 555px;
+  width: 100%;
+  padding-top: 65px;
+  padding-left: 120px;
+}
+
+.vision-content h2 {
+  color: var(--white);
+}
+
+.vision-content > .main-title {
+  z-index: 1;
+}
+
+.vision-text-icon {
+  position: absolute;
+  top: 50%;
+  left: -40px;
+  transform: translateY(-50%);
+  z-index: -1;
+}
+
+.vision-content p {
+  font-size: 16px;
+  line-height: 170%;
+  color: #ccddf6;
+  padding-top: 10px;
+}
+
+.vision-stats {
+  padding: 12px 0;
+}
+
+.stats-name h5 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.vision-progress-bar {
+  display: block;
+  height: 10px;
+  margin-top: 5px;
+  border: 1px solid #143568;
+}
+
+.vision-progress-per {
+  display: block;
+  height: 4px;
+  background: var(--primary);
+  margin-top: 2.5px;
+  margin-left: 3px;
+  animation: fillBars 1s ease-in-out forwards;
+  opacity: 0;
+}
+
+@keyframes fillBars {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    width: 100%;
+  }
+}
+
+/* Vision Section CSS End */
+
+/* Work Process Section CSS Start */
+
+.work-process-wrapper {
+  padding-top: 100px;
+}
+
+.work-process-tile {
+  padding-bottom: 60px;
+}
+
+.work-process-card {
+  text-align: center;
+}
+
+.work-process-card h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 130%;
+  color: var(--secondary);
+  padding: 25px 0 10px;
+  margin: 0;
+}
+
+.work-process-card p {
+  font-size: 16px;
+  line-height: 170%;
+  color: var(--gray);
+  margin: 0;
+}
+
+.plus-icon {
+  position: absolute;
+  top: 10px;
+  right: -50px;
+}
+
+/* Work Process Section CSS End */
+
+/* ==============***==============
+Excavations and Earthworks Page CSS
+==============***============== */
+
+/* Excavations and Earthworks Section CSS Start */
+
+.excavations-and-earthworks-hero-wrapper {
+  background: linear-gradient(#001c47a1, #001c47a1),
+    url(../images/excavations-and-earthworks-hero-bg.png);
+}
+
+/* Excavations and Earthworks Section CSS End */
+
+/* Services And Solutions Section CSS Start */
+
+.services-solutions-content-wrapper {
+  padding-top: 50px;
+}
+
+.ser-solu-content > p {
+  color: var(--gray);
+  font-size: 18px;
+  line-height: 170%;
+  padding: 20px 0;
+}
+
+.ser-solu-content h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 130%;
+  color: var(--secondary);
+}
+
+.ser-solu-content h3 img {
+  margin-top: 10px;
+}
+
+.services-items {
+  max-width: 360px;
+  width: 100%;
+  background: var(--main-color-5, #f9f9f9);
+}
+
+.services-items ul li a {
+  display: block;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  line-height: 130%;
+  color: var(--secondary);
+  padding: 16px 30px;
+  border-bottom: 1px solid var(--white);
+  transition: all 0.3s ease-in-out;
+}
+
+.services-items ul li a.active {
+  color: var(--white);
+  background: var(--primary);
+}
+
+.services-items ul li a:hover,
+.services-items ul li a:focus,
+.services-items ul li a:active {
+  color: var(--white);
+  background: var(--primary);
+}
+
+/* Call Use Text */
+
+.call-us-text {
+  padding-top: 70px;
+  margin-bottom: -150px;
+}
+
+.call-us-text h3 {
+  color: var(--secondary);
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 130%;
+}
+
+.call-us-text h3 img {
+  margin-top: 10px;
+}
+
+.call-us-text p {
+  color: var(--gray);
+  font-size: 18px;
+  line-height: 170%;
+  padding-top: 10px;
+  margin-bottom: 0;
+}
+
+/* Services And Solutions Section CSS End */
+
+/* Recent Work Section CSS Start */
+
+.recent-work-wrapper {
+  background: var(--main-color-2, #001c47);
+  margin-top: 150px;
+}
+
+.recent-work-title h2 {
+  color: var(--white);
+  padding: 35px 0;
+}
+
+.work-img {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.work-img::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #001c478f;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.work-img:hover::after {
+  opacity: 1;
+}
+
+.work-img > img {
+  max-width: 100%;
+  width: 100%;
+  min-height: 420px;
+  max-height: 420px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.work-project-link {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.work-img:hover .work-project-link {
+  opacity: 1;
+}
+
+.work-content {
+  position: absolute;
+  left: 30px;
+  bottom: -100px;
+  transition: bottom 0.3s ease-in-out;
+  z-index: 1;
+}
+
+.work-img:hover .work-content {
+  bottom: 30px;
+}
+
+.work-content h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  color: var(--white);
+}
+
+.work-content p {
+  font-size: 16px;
+  color: var(--white);
+  margin: 0;
+}
+
+/* Recent Work Section CSS End */
+
+/* Excavations and Earthworks Services Section CSS Start */
+
+.excavations-and-earthworks-services-wrapper {
+  padding-top: 80px;
+}
+
+.excavation-services-title {
+  padding-bottom: 40px;
+}
+
+.excavation-services-title h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 130%;
+  color: var(--secondary);
+}
+
+.excavation-services-title h3 img {
+  margin-top: 8px;
+}
+
+.excavations-services-card h6 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 170%;
+  color: var(--gray);
+}
+
+.excavations-services-card ul li {
+  position: relative;
+  font-size: 18px;
+  line-height: 170%;
+  color: var(--gray);
+  padding: 2px 0;
+  padding-left: 30px;
+}
+
+.excavations-services-card ul li::before {
+  position: absolute;
+  content: "";
+  top: 14px;
+  left: 10px;
+  width: 7px;
+  height: 7px;
+  background: var(--gray);
+  border-radius: 100%;
+}
+
+/* Excavations and Earthworks Services Section CSS End */
+
+/* ============***=============
+Building and construction Page CSS
+============***============= */
+
+.building-and-constructions-hero-wrapper {
+  background: linear-gradient(#001c47a1, #001c47a1),
+    url(../images/building-and-constructions-hero-bg.png);
+}
+
+/* ============***=============
+Welding and Fabrication Page CSS
+============***============= */
+
+.welding-and-fabrication-hero-wrapper {
+  background: linear-gradient(#001c47a1, #001c47a1),
+    url(../images/welding-and-fabrication-hero-bg.png);
+}
+
+/* ============***=============
+Concrete and driveway Page CSS
+============***============= */
+
+.concrete-and-driveway-hero-wrapper {
+  background: linear-gradient(#001c47a1, #001c47a1),
+    url(../images/concrete-and-driveway-hero-bg.png);
+}

@@ -1,0 +1,331 @@
+/* =========***=========
+Responsive CSS
+=========***========= */
+
+/* Min Width 1200px and Max Width 1399px */
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .main-menu ul li {
+    padding-right: 40px;
+  }
+
+  .home-hero-content {
+    padding: 60px 30px;
+  }
+
+  .home-hero-content h1 {
+    font-size: 42px;
+  }
+
+  .home-hero-content h4 {
+    font-size: 20px;
+  }
+
+  .hero-stats {
+    padding-right: 18px;
+  }
+
+  .hero-stats:last-child {
+    padding-right: 0;
+  }
+
+  .building-dreams-content {
+    padding-right: 30px;
+  }
+
+  .work-img > img {
+    max-width: 100%;
+    width: 100%;
+    min-height: 320px;
+    max-height: 320px;
+    height: 100%;
+  }
+}
+
+/* Min Width 992px and Max Width 1199px */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .home-hero-content {
+    padding: 80px 40px 50px 50px;
+  }
+
+  .home-hero-content h1 {
+    font-size: 32px;
+  }
+
+  .home-hero-content h4 {
+    font-size: 18px;
+  }
+
+  .hero-stats {
+    padding-right: 18px;
+  }
+
+  .hero-stats:last-child {
+    padding-right: 0;
+  }
+}
+
+/* Min Width 768px and Max Width 991px */
+@media (min-width: 768px) and (max-width: 991px) {
+  .home-hero-content {
+    padding: 80px 40px 50px 50px;
+  }
+
+  .home-hero-content,
+  .home-hero-img {
+    width: 100%;
+  }
+
+  .home-hero-img img {
+    min-height: 100%;
+  }
+
+  .home-hero-content h1 {
+    font-size: 36px;
+  }
+
+  .home-hero-content h4 {
+    font-size: 18px;
+  }
+
+  .hero-stats {
+    padding-right: 50px;
+  }
+
+  .hero-stats:last-child {
+    padding-right: 0;
+  }
+
+  .hero-slider .owl-prev,
+  .hero-slider .owl-next {
+    position: absolute;
+    top: -50px;
+  }
+}
+
+/* Min Width 300px and Max Width 767px */
+@media (min-width: 300px) and (max-width: 767px) {
+  .home-hero-content {
+    padding: 50px 20px;
+  }
+
+  .home-hero-content,
+  .home-hero-img {
+    width: 100%;
+  }
+
+  .home-hero-img img {
+    min-height: 100%;
+  }
+
+  .home-hero-content h1 {
+    font-size: 35px;
+  }
+
+  .home-hero-content h4 {
+    font-size: 16px;
+  }
+
+  .hero-stats {
+    padding-right: 50px;
+  }
+
+  .hero-stats:last-child {
+    padding-right: 0;
+  }
+
+  .hero-stats-wrapper {
+    padding-top: 60px;
+  }
+
+  .hero-stats p {
+    display: none;
+  }
+
+  .hero-slider .owl-prev,
+  .hero-slider .owl-next {
+    position: absolute;
+    top: -380px;
+  }
+
+  .hero-slider .owl-prev {
+    right: 90px;
+  }
+
+  .hero-slider .owl-next {
+    right: 15px;
+  }
+
+  .hero-slider .owl-prev i,
+  .hero-slider .owl-next i {
+    width: 60px;
+    height: 60px;
+  }
+
+  .features-content {
+    padding-top: 70px;
+  }
+
+  .call-icon {
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .question-content {
+    padding: 50px 0;
+    padding-left: 0;
+  }
+
+  .testimonial-slide {
+    flex-direction: column;
+  }
+
+  .testimonial-slide-content,
+  .testimonial-slide-img {
+    width: 100%;
+  }
+
+  .testimonial-slide-content {
+    min-height: 600px;
+    padding: 100px 20px 150px;
+  }
+
+  .testimonial-slide-img img {
+    min-height: 400px;
+    max-height: 400px;
+    height: 100%;
+  }
+
+  .testimonial-slider .owl-prev,
+  .testimonial-slider .owl-next {
+    position: absolute;
+    bottom: 50px;
+  }
+
+  .quote-icon {
+    top: 30px;
+    left: 10px;
+  }
+
+  .why-wrapper {
+    padding: 90px 40px 100px;
+  }
+
+  .why-btn {
+    padding: 60px 0;
+  }
+
+  .faq-wrapper {
+    padding: 0 0 30px;
+  }
+
+  .faq-content {
+    padding-top: 60px;
+  }
+
+  .free-quote-form-wrapper {
+    padding-top: 30px;
+  }
+
+  .free-quote-container {
+    padding: 30px 20px;
+  }
+
+  .footer-wrapper {
+    padding: 220px 20px 50px;
+  }
+
+  .footer-menu,
+  .footer-subscribe {
+    padding-bottom: 40px;
+  }
+
+  .common-hero-title h2 {
+    font-size: 50px;
+  }
+
+  .get-in-touch-form-container {
+    margin-top: 90px;
+    padding: 80px 20px;
+  }
+
+  .map-wrapper {
+    margin-bottom: -250px;
+  }
+
+  .map-container iframe {
+    width: 100%;
+    min-height: 500px;
+    height: 100%;
+  }
+
+  .building-dreams-wrapper {
+    padding-top: 30px;
+  }
+
+  .building-dreams-content {
+    padding-right: 0px;
+  }
+
+  .building-dreams-content h5 {
+    padding: 25px 0 20px;
+  }
+
+  .reece-polley-info .owner-name {
+    padding-left: 0;
+  }
+
+  .reece-polley-sign {
+    margin-left: -55px;
+  }
+
+  .building-dreams-img img {
+    max-width: 100%;
+    width: 100%;
+    max-height: 480px;
+  }
+
+  .building-dreams-img {
+    padding-top: 20px;
+  }
+
+  .building-dreams-message {
+    margin-top: 0;
+    margin-left: 0;
+    padding: 25px 20px 10px;
+  }
+
+  .building-dreams-message-icon {
+    position: relative;
+    max-width: 50px;
+    margin-top: -15px;
+  }
+
+  .building-dreams-message-text h5 {
+    padding: 0 15px;
+  }
+
+  .vision-story-text,
+  .vision-img,
+  .vision-img img {
+    width: 100%;
+    min-height: 300px;
+    max-height: 300px;
+    height: 100%;
+  }
+
+  .vision-content {
+    padding: 65px 20px;
+  }
+
+  .recent-work-wrapper {
+    padding-top: 65px;
+  }
+
+  .work-img > img {
+    min-height: 200px;
+    max-height: 250px;
+    height: 100%;
+  }
+}
