@@ -203,6 +203,10 @@ Responsive CSS
     bottom: 50px;
   }
 
+  .free-quote-wrapper {
+    padding-top: 60px;
+  }
+
   .quote-icon {
     top: 30px;
     left: 10px;
