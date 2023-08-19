@@ -203,8 +203,8 @@ Responsive CSS
     bottom: 50px;
   }
 
-  .free-quote-wrapper {
-    padding-top: 60px;
+  .home-quote {
+    margin-top: -180px;
   }
 
   .quote-icon {
