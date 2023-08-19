@@ -239,6 +239,11 @@ img {
   transition: all 0.3s ease-in-out;
 }
 
+.dropdown li a.active {
+  color: var(--white) !important;
+  background: var(--primary);
+}
+
 .dropdown li a:hover {
   background: var(--primary);
   color: var(--white) !important;
@@ -420,8 +425,9 @@ img {
   font-size: 16px !important;
 }
 
-.mobile-menu-bottom {
-  padding-top: 20px;
+.mobile-dropdown li a.active {
+  background: var(--primary);
+  color: var(--white) !important;
 }
 
 .mobile-menu-bottom ul li a {
@@ -1767,28 +1773,6 @@ Excavations and Earthworks Page CSS
   padding: 35px 0;
 }
 
-.work-img {
-  position: relative;
-  overflow: hidden;
-  cursor: pointer;
-}
-
-.work-img::after {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #001c478f;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-}
-
-.work-img:hover::after {
-  opacity: 1;
-}
-
 .work-img > img {
   max-width: 100%;
   width: 100%;
@@ -1796,45 +1780,6 @@ Excavations and Earthworks Page CSS
   max-height: 420px;
   height: 100%;
   object-fit: cover;
-}
-
-.work-project-link {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-}
-
-.work-img:hover .work-project-link {
-  opacity: 1;
-}
-
-.work-content {
-  position: absolute;
-  left: 30px;
-  bottom: -100px;
-  transition: bottom 0.3s ease-in-out;
-  z-index: 1;
-}
-
-.work-img:hover .work-content {
-  bottom: 30px;
-}
-
-.work-content h3 {
-  font-family: "Roboto", sans-serif;
-  font-size: 30px;
-  font-weight: 500;
-  color: var(--white);
-}
-
-.work-content p {
-  font-size: 16px;
-  color: var(--white);
-  margin: 0;
 }
 
 /* Recent Work Section CSS End */
@@ -1900,6 +1845,33 @@ Building and construction Page CSS
 }
 
 /* ============***=============
+Carpentry and joinery Page CSS
+============***============= */
+
+.carpentry-and-joinery-hero-wrapper {
+  background: linear-gradient(#001c47a1, #001c47a1),
+    url(../images/carpentry-and-joinery-hero-bg.png);
+}
+
+/* ============***=============
+Plumbing and gas fitting Page CSS
+============***============= */
+
+.plumbing-and-gas-fitting-hero-wrapper {
+  background: linear-gradient(#001c47a1, #001c47a1),
+    url(../images/plumbing-and-gas-fitting-hero-bg.png);
+}
+
+/* ============***=============
+Electrical and communications Page CSS
+============***============= */
+
+.electrical-and-communications-hero-wrapper {
+  background: linear-gradient(#001c47a1, #001c47a1),
+    url(../images/electrical-and-communications-hero-bg.png);
+}
+
+/* ============***=============
 Welding and Fabrication Page CSS
 ============***============= */
 
@@ -1909,10 +1881,28 @@ Welding and Fabrication Page CSS
 }
 
 /* ============***=============
+Welding and Fabrication Page CSS
+============***============= */
+
+.roofing-and-roof-plumbing-hero-wrapper {
+  background: linear-gradient(#001c47a1, #001c47a1),
+    url(../images/roofing-and-roof-plumbing-hero-bg.png);
+}
+
+/* ============***=============
 Concrete and driveway Page CSS
 ============***============= */
 
 .concrete-and-driveway-hero-wrapper {
   background: linear-gradient(#001c47a1, #001c47a1),
     url(../images/concrete-and-driveway-hero-bg.png);
+}
+
+/* ============***=============
+Concrete and driveway Page CSS
+============***============= */
+
+.garden-and-landscaping-hero-wrapper {
+  background: linear-gradient(#001c47a1, #001c47a1),
+    url(../images/garden-and-landscaping-hero-bg.png);
 }
