@@ -430,6 +430,7 @@ img {
 }
 
 .mobile-menu-bottom ul li {
+  width: initial;
   padding-right: 30px;
 }
 
@@ -923,8 +924,10 @@ img {
 /* FAQ Section CSS Start */
 
 .faq-wrapper {
+  position: relative;
   padding-top: 100px;
   margin-bottom: -100px;
+  z-index: 1;
 }
 
 .faq-img img {
@@ -1314,6 +1317,11 @@ Contact Us Page CSS
   line-height: 170%;
   margin: 0;
   padding: 0;
+}
+
+.owner-name img {
+  margin-top: -10px;
+  margin-left: -22px;
 }
 
 .owner-contact {
