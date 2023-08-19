@@ -9,14 +9,19 @@ window.addEventListener("scroll", function(){
 // JavaScript For Mobile Menu
 
 const bars_icon = document.getElementById("bars");
-const mobile_nav = document.getElementById("mobile-nav");
 const cross_icon = document.getElementById("cross-icon");
+const quote_icon = document.getElementById("quote-icon");
+const mobile_nav = document.getElementById("mobile-nav");
 
 bars_icon.addEventListener("click", () => {
   mobile_nav.classList.add("active");
 });
 
 cross_icon.addEventListener("click", () => {
+  mobile_nav.classList.remove("active");
+});
+
+quote_icon.addEventListener("click", () => {
   mobile_nav.classList.remove("active");
 });
 
